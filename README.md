@@ -15,11 +15,11 @@ enquiry.html - Inquiry form
 contact.html - Contact details
 css/ - Folder containing the external stylesheet
 
-# Part 3
+Part 3
 
 Live site: https://smiley721.github.io/README.md/
 
-Part 3 overview
+Part 3 overview:
 
 Added interactive features, form handling, search and SEO improvements to the Outdoor Warehouse website, then deployed it to GitHub Pages.
 
