@@ -32,8 +32,11 @@ js/main.js - back-to-top button used on every page
 
 Changelog
 
-Working through Part 2 feedback
-(Add one entry per point of feedback: what the feedback said, what you changed, and in which file.)
+Working through Feedback from Part 2
+
+In Part 2 I scored 1/10 for acting on the Part 1 feedback, because my changelog was incomplete. To fix that, I've recorded every change in Part 3 below, with the file it was made in and why.
+
+I also lost 5 marks for referencing in Part 2. For Part 3 I've cited each external source in the text and listed them at the bottom in [style], with access dates.
 
 Consistency and structure
 Deleted the duplicate file about_1.html.
