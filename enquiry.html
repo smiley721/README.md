@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product Enquiry - Outdoor Warehouse</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product &amp; Service Enquiry | Outdoor Warehouse</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -19,39 +20,50 @@
         </ul>
     </nav>
     <main>
-        <h2>Gear Enquiry Form</h2>
-        <p>Fill out your details below to check stock or request a quote for bulk gear orders.</p>
-        
-        <!-- Interactive Form Elements -->
-        <form>
-            <p>
-                <label>Your Full Name:</label><br>
-                <input type="text" name="name" required placeholder="Enter name">
-            </p>
-            <p>
-                <label>Email Address:</label><br>
-                <input type="email" name="email" required placeholder="name@example.com">
-            </p>
-            <p>
-                <label>Gear Category:</label><br>
-                <select name="category">
-                    <option>Tents & Shelters</option>
-                    <option>Camping Furniture</option>
-                    <option>Off-Road Gear</option>
-                    <option>Camp Kitchen</option>
-                </select>
-            </p>
-            <p>
-                <label>Your Message:</label><br>
-                <textarea name="message" rows="4" required placeholder="List items here..."></textarea>
-            </p>
-            <p>
-                <button type="submit">Submit Request</button>
-            </p>
-        </form>
+        <div class="container">
+            <h2>Product &amp; Service Enquiry</h2>
+            <p>Select an outdoor item or warehouse service below to check real-time pricing estimate and availability.</p>
+
+            <form id="enquiryForm" action="#" novalidate>
+
+                <div class="form-group">
+                    <label for="fullName">Your Full Name:</label>
+                    <input type="text" id="fullName" placeholder="Enter your name">
+                    <div id="nameError" class="error-message">Please enter a valid name (at least 3 characters long).</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" placeholder="example@domain.com">
+                    <div id="emailError" class="error-message">Please enter a valid email address structure.</div>
+                </div>
+
+                <div class="form-group">
+                    <label for="itemSelect">Select Product or Service:</label>
+                    <select id="itemSelect">
+                        <option value="">-- Choose an Item --</option>
+                        <option value="tent" data-price="R 1,500.00" data-status="In Stock (Fast Delivery)">4-Person Camping Tent</option>
+                        <option value="pack" data-price="R 850.00" data-status="Low Stock (Only 2 Left)">60L Hiking Backpack</option>
+                        <option value="boots" data-price="R 1,200.00" data-status="Available in Store">Waterproof Hiking Boots</option>
+                        <option value="guide" data-price="R 2,500.00" data-status="Booking Required">Guided Mountain Climbing Package</option>
+                    </select>
+                    <div id="itemError" class="error-message">Please select an item from the warehouse options.</div>
+                </div>
+
+                <button type="submit">Check Availability &amp; Cost</button>
+            </form>
+
+            <div id="enquiryResponse" class="response-box">
+                <h3>Enquiry Calculations Summary</h3>
+                <div class="response-item">Estimated Cost: <span id="resPrice" class="response-value"></span></div>
+                <div class="response-item">Inventory Status: <span id="resStatus" class="response-value"></span></div>
+            </div>
+        </div>
     </main>
     <footer>
-       <p>&COPY; Outdoor website</p>
+        <p>&copy; 2026 Outdoor Warehouse Prototype</p>
     </footer>
+
+    <script src="js/validation.js"></script>
 </body>
 </html>

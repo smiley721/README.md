@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Our Equipment - Outdoor Warehouse</title>
+     <meta name = "viewport" content="width = device-width, initial-scale=1.0">
+    <title>Our Products | Outdoor Warehouse</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -19,18 +20,32 @@
         </ul>
     </nav>
     <main>
-        <h2>Our Core Equipment Categories</h2>
-        <p>Explore our prototype layout of premium, rugged outdoor categories available for exploration:</p>
-        <ul>
-            <li><strong>Tents & Shelters:</strong> Heavy-duty family tents and hiking domes.</li>
-            <li><strong>Camping Furniture:</strong> Foldable camp chairs, stretchers, and utility tables.</li>
-            <li><strong>Off-Road Gear:</strong> 4x4 recovery kits and heavy-duty vehicle roof racks.</li>
-            <li><strong>Camp Kitchen:</strong> Gas stoves, cast-iron pots, and high-performance coolers.</li>
-        </ul>
+        <h2>Our Equipment</h2>
+        <p>Search our range: </p>
+        
+    <div class="form-group">
+       <label for="productSearch">Search equipment:</label>
+       <input type="text" id="productSearch" placeholder="e.g. tent, stove, boots">
+    </div>
+
+    <div class="form-group">
+         <label for="productSort">Sort by:</label>
+         <select id="productSort">
+         <option value="name-asc">Name (A to Z)</option>
+         <option value="price-asc">Price (low to high)</option>
+         <option value="price-desc">Price (high to low)</option>
+    </select>
+</div>
+
+<p id="resultCount"></p>
+<div id="productList"></div>
     </main>
     <footer>
         <p>&copy; 2026 Outdoor Warehouse Prototype</p>
     </footer>
+    
+    <script src="js/products.js"></script>
+    
 </body>
 </html>
 
